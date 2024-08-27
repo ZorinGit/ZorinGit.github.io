@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets\css\styles.css">
+</head>
+<body>
+
+    <!-- to add red color = g-danger -->
+    
+    <!-- Parent container to ensure alignment -->
+    <div class="container">
+
+        <!-- Header section with a navbar -->
+        <div class="container header text-center mt-5">
+            <!-- Bootstrap classes for flexbox layout:
+                d-flex: Applies display:flex to the container
+                justify-content-center: Centers the content horizontally
+                align-items-start: Aligns the items at the start vertically
+                mt-5: Adds a top margin of 3rem (5 spacing units) -->
+            
+            <nav class="navbar navbar-expand-lg rounded custom-navbar">
+                <!-- Navbar element with Bootstrap and custom classes:
+                    navbar: Applies basic navbar styles
+                    navbar-expand-lg: Expands and collapses the navbar on large screens and up
+                    bg-body-secondary: Applies a secondary background color
+                    rounded: Adds rounded corners to the navbar
+                    shadow-lg: Adds a large box shadow to the navbar
+                    custom-navbar: Custom class for additional styles defined in styles.css -->
+                
+                <div class="container-fluid">
+                    <!-- Container for navbar content, using Bootstrap's fluid container for full-width behavior -->
+
+                    <h1 class="navbar-brand mb-0">ZorinGit's Portfolio</h1>
+                    <!-- Navbar brand (usually the website name/logo):
+                        navbar-brand: Applies branding styles
+                        mb-0: Removes the bottom margin -->
+                    
+                    <!-- <button class="btn btn-outline-light" id="theme-toggle">Toggle Theme</button> -->
+                    <!-- Button element for toggling the theme:
+                        btn: Applies basic button styles
+                        btn-outline-light: Styles the button with a light border and text on a transparent background -->
+
+
+                    <button id="theme-toggle" type="button" role="switch" aria-checked="false" class="btn-toggle">
+                        <span class="toggle-circle"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        
+        <!-- Space between header and projects section -->
+        <div class="custom-space-top"></div>
+
+
+        <!-- Apollo 11 Lander section -->
+        <div class="container project-container">
+            <div class="row mb-4 p-4">
+                <!-- Bootstrap row with bottom margin of 4 spacing units -->
+                
+                <div class="col-md-4">
+                    <!-- Column that takes 4 out of 12 columns on medium and larger screens -->
+                    <img src="assets\images\Apllo11Lander.png" class="img-fluid rounded project-thumbnail" alt="Project Image">
+                    <!-- img-fluid: Makes the image responsive, so it scales nicely to the parent element -->
+                    <!-- rounded: Adds rounded corners to the image -->
+                    <!-- alt: Provides alternative text for the image -->
+                </div>
+                
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                    <!-- Column that takes 8 out of 12 columns on medium and larger screens -->
+                    <!-- d-flex: Applies flexbox layout to this column -->
+                    <!-- flex-column: Arranges children elements in a column -->
+                    <!-- justify-content-center: Centers the children elements vertically -->
+                    <h4>Apollo 11 Lander</h4>
+                    <!-- h5: Heading for the project title -->
+                    
+                    <p>This was my final project for CS50x a classic lunar lander game developed in Lua using the Love2D engine. The game’s physics (informed by Apollo 11 data) and collision detection were implemented without external libraries. One of the most interesting challenges was developing a line-intersection collision detection system. The pixel art was hand-crafted, while the music and sounds were sourced from various online creators. NASA images were enhanced using AI. The primary goal of this project was to create a simple yet polished game with a focus on quality execution. While I achieved most of my objectives, I should have devoted more effort to properly modularize the code.</p>
+                    <!-- p: Paragraph for the project description -->
+                    
+                    <div>
+                        <a href="https://github.com/ZorinGit/APOLLO11LANDER" class="btn btn-secondary me-2 mb-2">Code</a>
+                        <a href="game\love.js-main\index.html" class="btn btn-primary me-2 mb-2">Live</a>
+                        <a href="downloads\Apollo11Lander.zip" class="btn btn-success me-2 mb-2">WinDownload</a>
+                        <a href="https://www.youtube.com/watch?v=hxL9pn6PkBs" class="btn btn-info me-2 mb-2">Video</a>
+                        <!-- a: Anchor tag for the live project link -->
+                        <!-- btn: Applies Bootstrap button styles -->
+                        <!-- btn-primary: Styles the button with Bootstrap's primary color scheme -->
+                        <!-- me-2: Adds right margin of 2 spacing units -->
+                        <!-- mb-2: Adds bottom margin of 2 spacing units -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Apollo 11 Lander section -->
+        
+        <!-- space between projects -->
+        <div class="mt-5"></div>
+
+
+        <!-- Cat Website section -->
+        <div class="container project-container">
+            <div class="row mb-4 p-4">  
+                <div class="col-md-4">
+                    <img src="assets\images\CatHomepage.png" class="img-fluid rounded project-thumbnail" alt="Project Image">
+                </div>
+                
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                    <h4>Cat AI Homepage</h4>
+                    
+                    <p class="mb-2">This homepage was developed for a CS50x assignment and is built with Bootstrap for responsive design. The site primarily features AI-generated images and text, exploring AI generative technology from early 2023. The final page uses JavaScript to randomly select and display an AI-generated cat image from a folder. It was included here to highlight my front-end web design experience.</p>
+                    
+                    <div>
+                        <a href="https://github.com/ZorinGit/CatAI_Homepage" class="btn btn-secondary me-2 mb-2">Code</a>
+                        <a href="pages\CH\index.html" class="btn btn-primary me-2 mb-2">Live</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Cat Website section -->
+        
+        <!-- space between projects -->
+        <div class="mt-5"></div>
+
+        <!-- Discord Bot section -->
+        <div class="container project-container">
+            <div class="row mb-4 p-4">  
+                <div class="col-md-4">
+                    <img src="assets\images\DiscordBot.png" class="img-fluid rounded project-thumbnail" alt="Project Image">
+                </div>
+                
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                    <h4>Discord Bot</h4>
+                    
+                    <p>This Discord bot tracks "combos" based on user interactions. When different users post the same text consecutively, the bot increments and displays a "combo" count. If the same user repeats a comment or the text changes, the combo breaks, and the final length is announced. Initially hosted on Replit, it was later migrated to an Ubuntu cloud instance for improved stability. The migration included moving the old database and setting up a new SQLite3 database, with three additional files created for database management. The GitHub version has been sanitized to remove sensitive information. This project was a valuable learning experience, integrating various technologies such as Discord.py, cloud management, Ubuntu and SQLite3. As of now, the bot is active on nearly 200 Discord servers, showcasing its stability and user engagement.</p>
+                        
+                    <div>
+                        <a href="https://github.com/ZorinGit/DiscordBot" class="btn btn-secondary me-2 mb-2">Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Discord Bot section -->
+        
+        <!-- space between projects -->
+        <div class="mt-5"></div>
+        
+        <!-- Warhammer Mod section -->
+        <div class="container project-container">
+            <div class="row mb-4 p-4">  
+                <div class="col-md-4">
+                    <img src="assets\images\warhammer.jpg" class="img-fluid rounded project-thumbnail" alt="Project Image">
+                </div>
+                
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                    <h4>Warhammer Mod</h4>
+                    
+                    <p class="mb-2">A minimal mod for Total War Warhammer, featuring Lua scripts that act as listeners to remove a UI element during a specific game state as well as add new buttons. This project marked my first experience with Lua. The most engaging aspects included learning the game’s architecture and documentation, as well as examining the code of other mods that achieved similar effects.</p>
+                    
+                    <div>
+                        <a href="https://github.com/ZorinGit/WarhammerMod" class="btn btn-secondary me-2 mb-2">Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Warhammer Mod section -->
+
+        <!-- space between projects -->
+        <div class="mt-5"></div>
+
+        <!-- Chivis Game section -->
+        <div class="container project-container">
+            <div class="row mb-4 p-4">  
+                <div class="col-md-4">
+                    <img src="assets\images\ChivisGame.png" class="img-fluid rounded project-thumbnail" alt="Project Image">
+                </div>
+                
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                    <h4>Chivis Game</h4>
+                    
+                    <p class="mb-2">My very first project was a simple Pygame application where a cat randomly chooses your fate by randomly picking between two images. After completing a Pygame tutorial while learning Python, I was inspired to create an original game to apply my new skills. Note that the downloaded exe version may trigger antivirus software. This project was included to show my growth over the years.</p>
+                    
+                    <div>
+                        <a href="https://github.com/ZorinGit/ChivisGame" class="btn btn-secondary me-2 mb-2">Code</a>
+                        <a href="downloads\Chivis_exe.zip" class="btn btn-success me-2 mb-2">WinDownload</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Chivis Game section -->
+
+        <!-- End of Projects section -->
+    
+        <!-- Space between projects and footer section -->
+        <div class="custom-space-bottom"></div>
+
+        
+        <!-- Footer section -->
+        <footer>
+            <div class="d-flex justify-content-between align-items-center">
+                <span>&copy; ZorinGit 2024</span>
+                <span>Built with Bootstrap</span>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- JAVA SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets\js\scripts.js"></script>
+</body>
+</html>

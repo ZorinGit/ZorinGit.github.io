@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Apollo 11 Lander</title>
+    <base href="/game/love.js-main/">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id="spinner" class="pending"></div>
+
+    <!-- Service Worker registration script -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/game/love.js-main/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        }).catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+      }
+    </script>
+
+    <!-- Auto-reload script only once per session-->
+    <script>
+      // Check if the page is being reloaded
+      if (!sessionStorage.getItem('reloaded')) {
+        sessionStorage.setItem('reloaded', 'true');
+        // Reload the page after 1 second
+        setTimeout(() => {
+          location.reload();
+        }, 500);
+      } else {
+        // Clear the session storage item so the page won't reload again
+        sessionStorage.removeItem('reloaded');
+      }
+    </script>
+
+    <!-- Script to load the game -->
+    <script src="player.js?g=Apollo11Lander.love"> </script>
+
+
+  </body>
+</html>

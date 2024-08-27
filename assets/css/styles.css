@@ -1,0 +1,126 @@
+/* Default dark theme styles */
+body {
+    background-color: #1E1E3F; /* Dark blue background */
+    color: #D4D4D4; /* Light gray text */
+}
+
+p {
+    font-size: 15px; /* change size of p elements */
+}
+
+.header {
+    padding: 0; /* Remove padding */
+}
+
+.custom-navbar {
+    width: 100%; /* Ensure full width */
+    background-color: #3c3aa0; /* Slightly brighter dark blue for the navbar */
+}
+
+.navbar-brand {
+    color: #D4D4D4; /* Light gray text */
+    font-size: 30px;
+}
+
+/* Light theme styles */
+body.light-theme {
+    background-color: #f5f5f5; /* Light gray background */
+    color: #1E1E3F; /* Dark blue text */
+}
+
+body.light-theme .navbar-brand {
+    color: #1E1E3F; /* Dark blue text for the username */
+}
+
+body.light-theme .custom-navbar {
+    background-color: #d3c8c8; /* Light gray navbar background */
+    color: #1E1E3F; /* Dark blue text for the username */
+}
+
+body.light-theme .btn-toggle {
+    background-color: #4CAF50; /* Light green background for the toggle button */
+}
+
+body.light-theme .toggle-circle {
+    background-color: #FFFFFF; /* White circle for the toggle button */
+}
+
+body.light-theme .project-container {
+    /* border: 2px solid #e0e0e0; Border for light mode projects to look the same as navbar */
+    border: 2px solid #221d1d; /* Border for light mode projects to look the same as navbar*/
+}
+
+/* Additional styling for the toggle button */
+.btn-toggle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 44px;
+    height: 24px;
+    background-color: #d1d5db; /* Light gray background */
+    border: none; /* Remove default border */
+    border-radius: 9999px; /* Fully rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: none; /* Remove outline */
+    box-shadow: none; /* Remove box shadow */
+}
+
+.btn-toggle[aria-checked="true"] {
+    background-color: #8b5cf6; /* Purple background when checked */
+}
+
+.toggle-circle {
+    position: absolute;
+    top: 2px; /* Slight adjustment to center vertically */
+    left: 2px; /* Slight adjustment to center horizontally */
+    width: 20px;
+    height: 20px;
+    background-color: #374151; /* Dark gray circle */
+    border-radius: 50%; /* Fully rounded corners */
+    transition: transform 0.3s;
+    box-shadow: none; /* Remove box shadow */
+}
+
+.btn-toggle[aria-checked="true"] .toggle-circle {
+    transform: translateX(20px); /* Move circle to the right when checked */
+}
+
+/* For Firefox compatibility */
+.btn-toggle::-moz-focus-inner {
+    border: 0;
+}
+
+/* For Chrome-specific issues */
+.btn-toggle:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* Ensure the container for the project section has a gray border */
+.project-container {
+    border: 2px solid #3c3aa0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 0; /* Remove padding */
+}
+
+/* Custom class for spacing */
+.custom-space-top {
+    margin-top: 250px; /* You can specify the amount of space here */
+}
+
+.custom-space-bottom {
+    margin-top: 150px; /* You can specify the amount of space here */
+}
+
+/* For project image pop out when clicked */
+.project-thumbnail {
+    transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
+
+.project-thumbnail.clicked {
+    transform: scale(1.8); /* Scale the image by 10% when clicked */
+}

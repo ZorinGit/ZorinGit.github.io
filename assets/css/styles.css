@@ -19,7 +19,7 @@ p {
 
 .navbar-brand {
     color: #D4D4D4; /* Light gray text */
-    font-size: 30px;
+    font-size: 32px;
 }
 
 /* Light theme styles */
@@ -108,7 +108,7 @@ body.light-theme .project-container {
 
 /* Custom class for spacing */
 .custom-space-top {
-    margin-top: 250px; /* You can specify the amount of space here */
+    margin-top: 200px; /* You can specify the amount of space here */
 }
 
 .custom-space-bottom {
